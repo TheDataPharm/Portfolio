@@ -4,13 +4,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
-  background-color: #121212; /* Dark background */
+  background-color: #121212; /* Dark gray background */
   color: #ffffff; /* White text */
 }
 
 /* Navbar */
 .navbar {
-  background-color: #121212; /* Match the theme */
+  background-color: #121212;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -26,11 +26,100 @@ body {
 .nav-links li a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #00ff7f; /* Green hover effect */
+  color: #00ff7f; /* Bright green hover effect */
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  margin-left: 15px;
+  filter: brightness(0.8);
+  transition: filter 0.3s;
+}
+
+.social-icons img:hover {
+  filter: brightness(1);
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background-color: #000;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  background-color: #00ff7f;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 255, 127, 0.5);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #00cc66;
+  transform: scale(1.05);
+}
+
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Companies Section */
+.companies-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #121212;
+}
+
+.companies-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.companies-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.companies-logos img {
+  width: 100px;
+  height: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.companies-logos img:hover {
+  opacity: 1;
 }
