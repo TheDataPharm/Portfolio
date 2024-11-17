@@ -1,22 +1,36 @@
-/* Example CSS for Navbar */
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+/* Navbar */
 .navbar {
-  background-color: #121212;
-  padding: 20px;
+  background-color: #121212; /* Match the theme */
+  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
 }
+
 .nav-links li a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.2rem;
+  font-weight: 500;
   transition: color 0.3s;
 }
+
 .nav-links li a:hover {
-  color: #00ff7f;
+  color: #00ff7f; /* Green hover effect */
 }
