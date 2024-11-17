@@ -1,3 +1,44 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #00ff7f;
+}
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
 /* Hero Section */
 .hero-section {
   display: flex;
@@ -6,27 +47,21 @@
   padding: 50px 20px;
   background-color: #000;
 }
-
 .hero-content {
   max-width: 600px;
-  animation: fadeInLeft 1.5s ease-out;
 }
-
 .hero-title {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
-
 .hero-description {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  animation: fadeInUp 2s ease-out;
 }
-
 .cta-button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 25px;
   font-size: 1rem;
   color: #fff;
   background-color: #00ff7f;
@@ -35,50 +70,34 @@
   box-shadow: 0 0 10px #00ff7f;
   transition: transform 0.3s ease;
 }
-
 .cta-button:hover {
   transform: scale(1.1);
 }
-
-.hero-image {
-  animation: fadeInRight 2s ease-out;
-}
-
 .hero-image img {
   width: 300px;
   border-radius: 50%;
 }
 
-/* Animation Keyframes */
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* Companies Section */
+.companies-section {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #121212;
 }
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.companies-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.companies-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.companies-logos img {
+  width: 100px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.companies-logos img:hover {
+  filter: grayscale(0%);
 }
