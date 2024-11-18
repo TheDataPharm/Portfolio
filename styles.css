@@ -1,7 +1,7 @@
 /* Navbar Styling */
 .navbar {
   background-color: #1B1B1B;/* Dark background */
-  border-radius: 15px /* curved borders*/
+  border-radius: 15px; /* curved borders*/
   padding: 1rem 2rem; /* Define height */
 }
 
