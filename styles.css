@@ -12,8 +12,6 @@
   display: flex;
   justify-content: center; /* Links on the left, icons on the right */
   align-items: center; /* Center vertically */
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 /* Navigation Links */
