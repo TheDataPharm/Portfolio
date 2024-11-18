@@ -21,8 +21,8 @@
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  color: #F5F5F5;
+ /* font-weight: bold; */
   font-size: 1rem;
   transition: color 0.3s, text-shadow 0.3s;
   font-family: 'IBM Plex Mono', monospace;
