@@ -16,7 +16,7 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem; /* Even spacing between links */
+  gap: 6rem; /* Even spacing between links */
 }
 
 .nav-links li a {
@@ -29,7 +29,7 @@
 }
 
 .nav-links li a:hover {
-  color: #00ff00; /* Green on hover */
+  color: #3F8E00; /* Green on hover */
   text-shadow: 0 0 10px #00ff00;
 }
 
