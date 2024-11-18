@@ -1,63 +1,95 @@
 /* styles.css */
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color: #121212;
+  color: white;
 }
 
 .navbar {
-  background-color: #000; /* Black background */
-  padding: 1rem 2rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-.nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 1rem 2rem;
+  background: #000;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  display: inline-block;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #00ff00; /* Bright green hover effect */
-}
-
-.social-links {
-  display: flex;
   gap: 1.5rem;
 }
 
-.social-links a {
+.nav-links li a {
+  text-decoration: none;
   color: white;
-  font-size: 1.2rem;
-  transition: color 0.3s;
+  font-weight: bold;
 }
 
-.social-links a:hover {
-  color: #00ff00; /* Bright green hover effect */
+.social-icons a {
+  color: white;
+  margin-left: 1rem;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.content {
+  max-width: 50%;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #00ff00;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #00cc00;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.worked-with {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.worked-with h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.logos img {
+  height: 50px;
+  width: auto;
 }
