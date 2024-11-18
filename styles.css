@@ -13,40 +13,70 @@ body {
 
 /* Navbar Styling */
 .navbar {
-  background-color: #000;
-  padding: 1rem 2rem;
+  background-color: #000; /* Dark background */
+  padding: 1rem 0; /* Padding to define height */
 }
 
 .container {
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem; /* Space between links */
 }
 
 .nav-links li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  transition: color 0.3s;
+  font-size: 1rem;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #00ff00;
+  color: #00ff00; /* Green on hover */
+  text-shadow: 0 0 10px #00ff00;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem; /* Space between icons */
 }
 
 .social-icons a {
   color: white;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  transition: color 0.3s;
+  font-size: 1.5rem; /* Size of icons */
+  transition: color 0.3s, transform 0.3s;
 }
 
 .social-icons a:hover {
-  color: #00ff00;
+  color: #00ff00; /* Green on hover */
+  transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+/* Center Alignment */
+.nav-links,
+.social-icons {
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-wrap: wrap; /* Adjust links on smaller screens */
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
 }
