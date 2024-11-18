@@ -19,6 +19,8 @@
   list-style: none;
   display: flex;
   gap: 8rem; /* Even spacing between links */
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .nav-links li a {
