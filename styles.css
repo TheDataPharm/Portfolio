@@ -1,71 +1,63 @@
-/* General body styling */
+/* styles.css */
+
 body {
-  margin: 0; /* Removes default margin */
-  font-family: Arial, sans-serif; /* Sets a clean, sans-serif font */
-  background-color: black; /* Sets a black background */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
 }
 
-/* Navigation bar container */
 .navbar {
-  background-color: #1B1B1B; /* Black background for the navbar */
-  padding: 1rem 2rem; /* Adds space inside the navbar */
-  position: fixed; /* Keeps the navbar fixed at the top while scrolling */
-  width: 100%; /* Makes the navbar span the full width of the screen */
-  top: 0; /* Positions the navbar at the top of the viewport */
-  z-index: 1000; /* Ensures the navbar is above other elements */
+  background-color: #000; /* Black background */
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Container for navigation and social links */
 .nav-container {
-  display: flex; /* Aligns items in a horizontal row */
-  justify-content: space-between; /* Spreads out the nav links and social icons */
-  align-items: center; /* Vertically centers the content */
-  max-width: 1200px; /* Limits the maximum width of the container */
-  margin: 0 auto; /* Centers the container horizontally */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Styling for the list of navigation links */
 .nav-links {
-  list-style: none; /* Removes default bullet points from the list */
-  display: flex; /* Displays links in a horizontal row */
-  gap: 2rem; /* Adds space between the navigation links */
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-/* Individual list item styling */
 .nav-links li {
-  display: inline-block; /* Ensures each item is inline */
+  display: inline-block;
 }
 
-/* Styling for navigation links */
 .nav-links a {
-  color: white; /* Sets the text color to white */
-  text-decoration: none; /* Removes underline from links */
-  font-weight: 500; /* Sets a medium font weight */
-  font-size: 1rem; /* Sets the font size */
-  transition: color 0.3s; /* Smooth transition for hover effect */
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
-/* Hover effect for navigation links */
 .nav-links a:hover {
-  color: #00ff00; /* Bright green color on hover */
+  color: #00ff00; /* Bright green hover effect */
 }
 
-/* Container for social media links */
 .social-links {
-  display: flex; /* Displays icons in a horizontal row */
-  gap: 1.5rem; /* Adds space between social icons */
+  display: flex;
+  gap: 1.5rem;
 }
 
-/* Styling for social media icons */
 .social-links a {
-  color: white; /* Sets the icon color to white */
-  font-size: 1.2rem; /* Sets a slightly larger icon size */
-  transition: color 0.3s; /* Smooth transition for hover effect */
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
 }
 
-/* Hover effect for social media links */
 .social-links a:hover {
-  color: #00ff00; /* Bright green color on hover */
+  color: #00ff00; /* Bright green hover effect */
 }
