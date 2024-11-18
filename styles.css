@@ -1,60 +1,47 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #121212; /* Matches the dark theme */
-  color: #fff;
-}
-
-/* Navigation Bar */
+/* Navigation Bar Styles */
 .navbar {
-  background-color: #000; /* Solid black background */
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #1a1a1a; /* Set a slightly lighter black background for the rectangle */
+  padding: 15px 40px; /* Add padding inside the navbar for spacing */
+  border-radius: 10px; /* Add rounded corners to the navbar rectangle */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space the navigation links and social icons apart */
+  align-items: center; /* Center items vertically */
+  margin: 20px auto; /* Center the navbar horizontally with some vertical spacing */
+  max-width: 1200px; /* Limit the navbar width for a cleaner design */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
 }
 
 .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
+  list-style: none; /* Remove default list styling (bullets, etc.) */
+  display: flex; /* Use flexbox to align links horizontally */
+  gap: 30px; /* Add space between each navigation link */
 }
 
 .nav-links li a {
-  text-decoration: none;
-  color: #fff; /* White links */
-  font-size: 1.1rem;
-  font-weight: 500;
-  transition: color 0.3s;
+  text-decoration: none; /* Remove the underline from links */
+  color: #ffffff; /* Set the link text color to white */
+  font-size: 1.1rem; /* Set the font size of the links */
+  font-weight: 500; /* Set the font weight to medium */
+  transition: color 0.3s ease; /* Smooth transition effect for hover color changes */
 }
 
 .nav-links li a:hover {
-  color: #00ff7f; /* Green hover effect */
+  color: #00ff7f; /* Change the link text color to bright green on hover */
 }
 
 .social-icons {
-  display: flex;
-  align-items: center;
+  display: flex; /* Use flexbox to align social icons horizontally */
+  align-items: center; /* Center the social icons vertically */
 }
 
 .social-icons img {
-  width: 24px;
-  height: 24px;
-  margin-left: 15px;
-  filter: brightness(0.8); /* Dim icon effect */
-  transition: filter 0.3s;
+  width: 24px; /* Set a fixed width for the social icons */
+  height: 24px; /* Set a fixed height for the social icons */
+  margin-left: 15px; /* Add spacing between social icons */
+  filter: brightness(0.8); /* Dim the icons slightly for a cleaner look */
+  transition: filter 0.3s ease; /* Smooth transition effect for hover brightness */
 }
 
 .social-icons img:hover {
-  filter: brightness(1); /* Brighten on hover */
+  filter: brightness(1); /* Brighten the icons on hover */
 }
