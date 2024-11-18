@@ -1,35 +1,22 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: white;
-}
-
 /* Navbar Styling */
 .navbar {
   background-color: #000; /* Dark background */
-  padding: 1rem 0; /* Padding to define height */
+  padding: 1rem 0; /* Define height */
 }
 
 .container {
+  display: flex;
+  justify-content: space-between; /* Links on the left, icons on the right */
+  align-items: center; /* Center vertically */
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* Navigation Links */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem; /* Space between links */
+  gap: 2rem; /* Even spacing between links */
 }
 
 .nav-links li a {
@@ -48,7 +35,7 @@ body {
 /* Social Media Icons */
 .social-icons {
   display: flex;
-  gap: 1rem; /* Space between icons */
+  gap: 1rem;
 }
 
 .social-icons a {
@@ -59,24 +46,5 @@ body {
 
 .social-icons a:hover {
   color: #00ff00; /* Green on hover */
-  transform: scale(1.2); /* Slightly enlarge on hover */
-}
-
-/* Center Alignment */
-.nav-links,
-.social-icons {
-  align-items: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-wrap: wrap; /* Adjust links on smaller screens */
-    justify-content: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-    margin-top: 1rem;
-  }
+  transform: scale(1.2); /* Slightly enlarge */
 }
