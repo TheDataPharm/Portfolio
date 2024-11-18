@@ -1,47 +1,63 @@
-/* Navigation Bar Styles */
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+}
+
 .navbar {
-  background-color: #1a1a1a; /* Set a slightly lighter black background for the rectangle */
-  padding: 15px 40px; /* Add padding inside the navbar for spacing */
-  border-radius: 10px; /* Add rounded corners to the navbar rectangle */
-  display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Space the navigation links and social icons apart */
-  align-items: center; /* Center items vertically */
-  margin: 20px auto; /* Center the navbar horizontally with some vertical spacing */
-  max-width: 1200px; /* Limit the navbar width for a cleaner design */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  background-color: #000; /* Black background */
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-links {
-  list-style: none; /* Remove default list styling (bullets, etc.) */
-  display: flex; /* Use flexbox to align links horizontally */
-  gap: 30px; /* Add space between each navigation link */
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links li a {
-  text-decoration: none; /* Remove the underline from links */
-  color: #ffffff; /* Set the link text color to white */
-  font-size: 1.1rem; /* Set the font size of the links */
-  font-weight: 500; /* Set the font weight to medium */
-  transition: color 0.3s ease; /* Smooth transition effect for hover color changes */
+.nav-links li {
+  display: inline-block;
 }
 
-.nav-links li a:hover {
-  color: #00ff7f; /* Change the link text color to bright green on hover */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
-.social-icons {
-  display: flex; /* Use flexbox to align social icons horizontally */
-  align-items: center; /* Center the social icons vertically */
+.nav-links a:hover {
+  color: #00ff00; /* Bright green hover effect */
 }
 
-.social-icons img {
-  width: 24px; /* Set a fixed width for the social icons */
-  height: 24px; /* Set a fixed height for the social icons */
-  margin-left: 15px; /* Add spacing between social icons */
-  filter: brightness(0.8); /* Dim the icons slightly for a cleaner look */
-  transition: filter 0.3s ease; /* Smooth transition effect for hover brightness */
+.social-links {
+  display: flex;
+  gap: 1.5rem;
 }
 
-.social-icons img:hover {
-  filter: brightness(1); /* Brighten the icons on hover */
+.social-links a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #00ff00; /* Bright green hover effect */
 }
