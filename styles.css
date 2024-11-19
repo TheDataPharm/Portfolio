@@ -1,5 +1,7 @@
 /* Navbar Styling */
 .navbar {
+  display: flex;
+  justify-content: space_between;
   background-color: #292929;/* Dark background */
   border-radius: 10px; /* curved borders*/  
   margin: 0;
