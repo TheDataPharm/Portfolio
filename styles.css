@@ -1,13 +1,12 @@
 /* Navbar Styling */
 .navbar {
   display: flex;
-  justify-content: space_between;
   background-color: #292929;/* Dark background */
   border-radius: 10px; /* curved borders*/  
   margin: 0;
-  margin-right: 75;  /* adds space to the right margin */
-  margin-left: 75; /* adds apace to the left */
-  margin-top: -25;  /* removes space from the top */
+  margin-right: 75px;  /* adds space to the right margin */
+  margin-left: 75px; /* adds apace to the left */
+  margin-top: -25px;  /* removes space from the top */
   margin-bottom: 0;
   padding: 1rem 2rem; /* Define height */
 }
@@ -24,6 +23,7 @@
   gap: 8rem; /* Even spacing between links */
   padding-left: 5rem;
   padding-right: 5rem;
+  list_style: none;
 }
 
 /* navigation buttons on the navigation bar*/
