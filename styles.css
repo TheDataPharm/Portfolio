@@ -20,10 +20,10 @@
 /* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 8rem; /* Even spacing between links */
+  gap: 10rem; /* Even spacing between links */
   padding-left: 5rem;
   padding-right: 5rem;
-  list_style: none;
+  list-style: none;
 }
 
 /* navigation buttons on the navigation bar*/
@@ -45,7 +45,7 @@
 .nav-icons {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: 5rem;
 }
 
 .nav-icons a {
