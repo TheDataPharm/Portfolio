@@ -2,12 +2,11 @@
 .navbar {
   background-color: #1B1B1B;/* Dark background */
   border-radius: 15px; /* curved borders*/ 
-  width: 70%; 
-  max_width: 800px;
+  width: 85%; 
   margin: 0;
-  margin-right: 0;
-  margin-left: 0;
-  margin-top: 0;
+  margin-right: 75;
+  margin-left: 75;
+  margin-top: -20;
   margin-bottom: 0;
   padding: 1rem 2rem; /* Define height */
 }
@@ -29,7 +28,7 @@
 
 .nav-links li a {
   text-decoration: none;
-  color: #F5F5F5;
+  color: #6B6B6B;
  /* font-weight: bold; */
   font-size: 1rem;
   transition: color 0.3s, text-shadow 0.3s;
