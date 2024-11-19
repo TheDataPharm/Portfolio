@@ -1,8 +1,8 @@
 /* Navbar Styling */
 .navbar {
   background-color: #292929;/* Dark background */
-  border-radius: 15px; /* curved borders*/ 
-  width: 85%; 
+  border-radius: 10px; /* curved borders*/ 
+  width: 75%; 
   margin: 0;
   margin-right: 75;
   margin-left: 75;
