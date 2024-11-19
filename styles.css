@@ -3,9 +3,9 @@
   background-color: #292929;/* Dark background */
   border-radius: 10px; /* curved borders*/  
   margin: 0;
-  margin-right: 75;
-  margin-left: 75;
-  margin-top: -25;
+  margin-right: 75;  /* adds space to the right margin */
+  margin-left: 75; /* adds apace to the left */
+  margin-top: -25;  /* removes space from the top */
   margin-bottom: 0;
   padding: 1rem 2rem; /* Define height */
 }
@@ -25,17 +25,18 @@
   padding-right: 5rem;
 }
 
+/* navigation buttons on the navigation bar*/
 .nav-links li a {
   text-decoration: none;
   color: #6B6B6B;
- /* font-weight: bold; */
   font-size: 1rem;
   transition: color 0.3s, text-shadow 0.3s;
   font-family: 'IBM Plex Mono', monospace;
 }
 
+/* Green on hover */
 .nav-links li a:hover {
-  color: #57C400; /* Green on hover */
+  color: #57C400; 
   text-shadow: 0 0 10px #00ff00;
 }
 
@@ -46,8 +47,8 @@
 }
 
 .social-icons a {
-  color: white;
-  font-size: 1.5rem; /* Size of icons */
+  color: #6B6B6B;
+  font-size: 1rem; /* Size of icons */
   transition: color 0.3s, transform 0.3s;
 }
 
