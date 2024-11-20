@@ -20,9 +20,9 @@
 /* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 7rem; /* Even spacing between links */
-  padding-left: 3rem;
-  padding-right: 3rem;
+  gap: 6rem; /* Even spacing between links */
+  padding-left: 4rem;
+  padding-right: 4rem;
   list-style: none;
 }
 
