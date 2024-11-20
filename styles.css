@@ -48,15 +48,15 @@
   gap: 5rem;
 }
 
-.nav-icons a {
-  color: #6B6B6B;
-  font-size: 1rem; /* Size of icons */
-  transition: color 0.3s, transform 0.3s;
+.nav-icons  a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 15px;
+  transition: color 0.3s ease;
 }
 
 .nav-icons a:hover {
-  color: #00ff00; /* Green on hover */
-  transform: scale(1.2); /* Slightly enlarge */
+  color: #aaa;
 }
 
 body {
