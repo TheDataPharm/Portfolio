@@ -52,7 +52,7 @@ body {
 .nav-icons a {
   margin: 0 10px;
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s;
 }
