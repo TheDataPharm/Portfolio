@@ -87,13 +87,13 @@ body {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
-  color: #d1d1d1;
+  color: #1b1b1b;
 }
 
 .cta-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #3bd429;
+  background-color: #57C400;
   color: #000;
   font-weight: bold;
   border-radius: 5px;
