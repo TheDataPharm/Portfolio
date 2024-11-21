@@ -13,6 +13,7 @@ body {
   margin-top: -1.5px;  /* removes space from the top */
   margin-bottom: 100px;
   padding: 1rem 2rem; 
+  align-items: center;
 }
 
 .container {
