@@ -61,7 +61,7 @@ body {
   transform: scale(1.2)
 }
 
-.nav-icons img { 
+.nav-icons { 
   width: 15px; /* Set the desired width */
   height: 15px; /* Set the desired height */ 
 }
