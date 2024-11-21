@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #000;
+  color: #6B6B6B;
+}
 /* Navbar Styling */
 .navbar {
   display: flex;
@@ -42,26 +48,17 @@
 }
 
 /* Social Media Icons */
-.nav-icons {
-  display: flex;
-  list-style: none;
-  gap: 5rem;
+
+.social-icons a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.nav-icons  a {
-  text-decoration: none;
-  color: #fff;
-  margin-left: 15px;
-  transition: color 0.3s ease;
-}
 
 .nav-icons a:hover {
   color: #aaa;
 }
 
-body {
-  margin: 0;
-  font-family: 'IBM Plex Mono', monospace;
-  background-color: #000;
-  color: #6B6B6B;
-}
+
