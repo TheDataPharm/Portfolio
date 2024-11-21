@@ -65,4 +65,28 @@ body {
   width: 25px; /* Set the desired width */
   height: 25px; /* Set the desired height */ 
 }
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 40px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #d1d1d1;
+}
 
