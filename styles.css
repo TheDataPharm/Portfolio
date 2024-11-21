@@ -120,20 +120,22 @@ body {
 }
 
 /* Text animation */ 
-.text-animation span { 
+/* Text animation */ 
+.text-animation { 
 display: inline-block; 
+white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 1s linear forwards; 
-animation-delay: calc(var(--char-index) * 0.1s);
-} /* Keyframes for the animation */
+animation: reveal 5s steps(50, end) infinite; /* Adjust the timing and steps as needed */ 
+} 
+/* Keyframes for the animation */ 
 @keyframes reveal {
-0% { 
+0%, 100% { 
   opacity: 0; 
-  transform: 
-  translateY(-20px); 
-}
-  100% { 
+} 
+  10%, 90%  { 
     opacity: 1; 
-    transform: translateY(0);
-}
+  } 
+  10% { clip-path: inset(0 100% 0 0); } /* Hide text */ 
+  90% { clip-path: inset(0 0 0 0); 
+      }
 }
