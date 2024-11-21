@@ -90,3 +90,30 @@ body {
   color: #d1d1d1;
 }
 
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #3bd429;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(59, 212, 41, 0.5);
+  transition: transform 0.2s;
+}
+
+.cta-button span {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3bd429;
+}
