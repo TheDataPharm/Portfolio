@@ -8,13 +8,11 @@ body {
 .navbar {
   display: flex;
   background-color: #292929;/* Dark background */
-  border-radius: 10px; /* curved borders*/  
-  margin: 0;
-  margin-right: 75px;  /* adds space to the right margin */
-  margin-left: 75px; /* adds apace to the left */
-  margin-top: -25px;  /* removes space from the top */
-  margin-bottom: 0;
-  padding: 1rem 2rem; /* Define height */
+  border-radius: 5px; /* curved borders*/ 
+  margin-left: 18%; /* adds apace to the left */
+  margin-top: -1.5px;  /* removes space from the top */
+  margin-bottom: 100px;
+  padding: 1rem 2rem; 
 }
 
 .container {
@@ -58,7 +56,8 @@ body {
 }
 
 .nav-icons a:hover {
-  color: #00ff00; /* Green hover effect */
+  color: #00ff00;/* Green hover effect */
+  transform: scale(1.2)
 }
 
 
