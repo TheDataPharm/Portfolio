@@ -94,11 +94,12 @@ body {
   display: inline-block;
   padding: 15px 30px;
   background-color: #57C400;
-  color: #9C9C9C;
+  color: #F5F5F5;
   font-weight: bold;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(59, 212, 41, 0.5);
   transition: transform 0.2s;
+  text-decoration: none;
 }
 
 .cta-button span {
