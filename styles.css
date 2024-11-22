@@ -138,8 +138,8 @@ animation: reveal 5s steps(50, end) infinite; /* Adjust the timing and steps as 
 /* Recent Work Section Styling */
 .recent-work-section {
   padding: 80px 20px;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #000;
+  color: #9C9C9C;
 }
 
 .recent-work-section h2 {
