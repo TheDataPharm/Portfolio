@@ -134,7 +134,25 @@ animation: reveal 5s steps(50, end) infinite; /* Adjust the timing and steps as 
       }
 }
 
-
+/* Sliding Text Animation */ 
+.sliding-text { 
+  position: relative;
+  height: 2.5rem; /* Adjust based on your font size */ 
+  overflow: hidden; 
+} 
+.text-slide { 
+  display: inline-block; 
+  position: absolute; 
+  width: 100%; 
+  text-align: center;
+  animation: slide 10s infinite; 
+}
+@keyframes slide { 
+  0%, 25% { transform: translateY(0); } 
+  30%, 55% { transform: translateY(-100%); } 
+  60%, 85% { transform: translateY(-200%); } 
+  90%, 100% { transform: translateY(-300%);}
+}
 /* Recent Work Section Styling */
 .recent-work-section {
   padding: 80px 20px;
