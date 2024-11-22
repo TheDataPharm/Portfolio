@@ -11,3 +11,15 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function() { 
+  const slides = document.querySelectorAll(".text-slide"); 
+  // Adjust this function to reset and trigger the animation loop
+  function resetAnimation() {
+    slides.forEach((slide, index) => { 
+      slide.style.animation = 'none'; 
+      slide.offsetHeight; // Trigger reflow 
+      slide.style.animation = `slide 10s infinite`;
+    }); 
+  } // Call the reset function if needed
+  resetAnimation(); 
+});
