@@ -75,6 +75,7 @@ body {
 
 .hero-content {
   max-width: 50%;
+  margin-left: 20%;
 }
 
 .hero-content h1 {
@@ -111,13 +112,6 @@ body {
   transform: scale(1.1);
 }
 
-.profile-image img {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  object-fit: cover;
- /* border: 4px solid #3bd429;*/
-}
 
 /* Text animation */ 
 /* Text animation */ 
