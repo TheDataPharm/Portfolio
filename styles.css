@@ -134,14 +134,14 @@ display: inline-block;
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
 animation: reveal 8s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
-animation-delay:10s;
+animation-delay:14s;
 } 
 .text-animation3 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
 animation: reveal 8s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
-animation-delay: 16s;
+animation-delay: 22s;
 } 
 
 
