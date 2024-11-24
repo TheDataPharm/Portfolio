@@ -119,7 +119,7 @@ html, body {
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 8s steps(50, end);
+animation: reveal 8s steps(50, end) forwards 1;
 animation-fill-mode: forwards;/* Adjust the timing and steps as needed */
 } 
 
@@ -127,7 +127,7 @@ animation-fill-mode: forwards;/* Adjust the timing and steps as needed */
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 6s steps(50, end);/* Adjust the timing and steps as needed */
+animation: reveal 6s steps(50, end) forwards 1;/* Adjust the timing and steps as needed */
 animation-fill-mode: forwards;
 animation-delay:8s;
 } 
@@ -135,7 +135,7 @@ animation-delay:8s;
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 8s steps(50, end); /* Adjust the timing and steps as needed */
+animation: reveal 8s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
 animation-fill-mode: forwards;
 animation-delay:14s;
 } 
@@ -143,7 +143,7 @@ animation-delay:14s;
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 8s steps(50, end); /* Adjust the timing and steps as needed */
+animation: reveal 8s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
 animation-fill-mode: forwards;
 animation-delay: 22s;
 } 
