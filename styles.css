@@ -122,11 +122,7 @@ opacity: 0;
 animation: reveal 5s steps(50, end) infinite; /* Adjust the timing and steps as needed */ 
 } 
 
-.line span { 
-  display: inline-block; 
-  opacity: 0; 
-  animation: reveal 0.5s linear forwards;
-}
+
 /* Keyframes for the animation */ 
 @keyframes reveal {
 0%, 100% { 
