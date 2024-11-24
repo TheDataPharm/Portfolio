@@ -119,28 +119,28 @@ html, body {
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 8s steps(50, end); /* Adjust the timing and steps as needed */
+animation: reveal 8s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
 } 
 
 .text-animation1 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 6s steps(50, end); /* Adjust the timing and steps as needed */
+animation: reveal 6s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
 animation-delay:8s;
 } 
 .text-animation2 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 8s steps(50, end); /* Adjust the timing and steps as needed */
+animation: reveal 8s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
 animation-delay:10s;
 } 
 .text-animation3 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 8s steps(50, end); /* Adjust the timing and steps as needed */
+animation: reveal 8s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
 animation-delay: 16s;
 } 
 
