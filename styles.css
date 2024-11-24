@@ -115,33 +115,33 @@ html, body {
 }
 
 /* Text animation */ 
-/* Text animation */
-.text-animation {
-  display: inline-block;
-  white-space: nowrap; /* Prevents the text from wrapping */
-  opacity: 0;
-  animation: reveal 5s steps(50, end) infinite; /* Adjust the timing and steps as needed */
-}
+.text-animation { 
+display: inline-block; 
+white-space: nowrap; /* Prevents the text from wrapping */ 
+opacity: 0; 
+animation: reveal 5s steps(50, end) infinite; /* Adjust the timing and steps as needed */ 
+} 
 
-.text-animation .line {
-  display: block;
+.text-animation .line { 
+  display: block; 
+  white-space: nowrap;
 }
-
-.text-animation .line span {
-  display: inline-block;
-  opacity: 0;
+.text-animation .line span { 
+  display: inline-block; 
+  opacity: 0; 
   animation: reveal 0.5s linear forwards;
 }
-
+/* Keyframes for the animation */ 
 @keyframes reveal {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+0%, 100% { 
+  opacity: 0; 
+} 
+  10%, 90%  { 
+    opacity: 1; 
+  } 
+  10% { clip-path: inset(0 100% 0 0); } /* Hide text */ 
+  90% { clip-path: inset(0 0 0 0); 
+      }
 }
 
 
