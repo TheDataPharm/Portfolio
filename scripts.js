@@ -13,14 +13,16 @@ document.addEventListener("DOMContentLoaded", function() {
       const charSpan = document.createElement('span');
       charSpan.textContent = char;
       charSpan.style.animationDelay = `${(lineIndex * 2) + (charIndex * 0.1)}s`; // Delay based on character and line index
+      charSpan.style.animationDuration = '0.5s'; // Duration for each character's animation
       lineSpan.appendChild(charSpan);
     });
 
     textElement.appendChild(lineSpan);
-    textElement.appendChild(document.createElement('br')); // Add line break
+    if (lineIndex < lines.length - 1) {
+      textElement.appendChild(document.createElement('br')); // Add line break if not the last line
+    }
   });
 });
-
 
 
 
