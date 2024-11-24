@@ -153,13 +153,21 @@ animation-delay: 22s;
 @keyframes reveal {
   0% {
     opacity: 0;
-    transform: translateX(-100%);
+  }
+  10% {
+    opacity: 1;
+    clip-path: inset(0 100% 0 0); /* Hide text */
+  }
+  90% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0); /* Reveal text */
   }
   100% {
-    opacity: 1;
-    transform: translateX(0);
+    opacity: 1; /* Ensure text stays visible */
+    clip-path: inset(0 0 0 0);
   }
 }
+
 
 
 /* Sliding Text Animation */ 
