@@ -117,12 +117,19 @@ html, body {
 /* Text animation */ 
 .text-animation { 
 display: inline-block; 
-white-space: pre-wrap; /* Prevents the text from wrapping */ 
+white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
 animation: reveal 5s steps(50, end) infinite; /* Adjust the timing and steps as needed */ 
 } 
 
-
+.text-animation .line { 
+  display: block; 
+}
+.text-animation .line span { 
+  display: inline-block; 
+  opacity: 0; 
+  animation: reveal 0.5s linear forwards;
+}
 /* Keyframes for the animation */ 
 @keyframes reveal {
 0%, 100% { 
