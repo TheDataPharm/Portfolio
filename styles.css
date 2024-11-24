@@ -119,26 +119,29 @@ html, body {
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 5s steps(50, end) infinite; /* Adjust the timing and steps as needed */ 
+animation: reveal 8s steps(50, end) infinite; /* Adjust the timing and steps as needed */
 } 
 
 .text-animation1 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 10s steps(50, end) infinite; /* Adjust the timing and steps as needed */ 
+animation: reveal 8s steps(50, end) infinite; /* Adjust the timing and steps as needed */
+animation-delay:5s;
 } 
 .text-animation2 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 15s steps(50, end) infinite; /* Adjust the timing and steps as needed */ 
+animation: reveal 8s steps(50, end) infinite; /* Adjust the timing and steps as needed */
+animation-delay:10s;
 } 
 .text-animation3 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 20s steps(50, end) infinite; /* Adjust the timing and steps as needed */ 
+animation: reveal 8s steps(50, end) infinite; /* Adjust the timing and steps as needed */
+animation-delay: 15s;
 } 
 
 
