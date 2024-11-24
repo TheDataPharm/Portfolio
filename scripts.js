@@ -15,17 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
       element.appendChild(span);
     });
   });
-
-  const totalDuration = textElements.length * 6 + textElements[textElements.length - 1].textContent.length * 0.1;
-
-  // Set timeout to reset animations
-  setTimeout(() => {
-    textElements.forEach(el => {
-      el.style.animation = 'none';
-      el.offsetHeight; // Trigger reflow
-      el.style.animation = '';
-    });
-  }, totalDuration * 1000 + 6000); // Total duration for all animations plus extra delay for reset
 });
 
 
