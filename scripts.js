@@ -4,10 +4,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   textElement.innerHTML = '';
 
-  // Wrap each character of each line in a <span>
+  // Wrap each line and then each character in a <span>
   lines.forEach((line, lineIndex) => {
     const lineSpan = document.createElement('span');
     lineSpan.classList.add('line');
+    lineSpan.style.display = 'block'; // Ensure each line is a block
 
     line.split('').forEach((char, charIndex) => {
       const charSpan = document.createElement('span');
@@ -18,9 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     textElement.appendChild(lineSpan);
-    if (lineIndex < lines.length - 1) {
-      textElement.appendChild(document.createElement('br')); // Add line break if not the last line
-    }
   });
 });
 
