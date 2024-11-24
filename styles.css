@@ -122,15 +122,6 @@ opacity: 0;
 animation: reveal 5s steps(50, end) infinite; /* Adjust the timing and steps as needed */ 
 } 
 
-.text-animation .line { 
-  display: block; 
-  white-space: nowrap;
-}
-.text-animation .line span { 
-  display: inline-block; 
-  opacity: 0; 
-  animation: reveal 0.5s linear forwards;
-}
 /* Keyframes for the animation */ 
 @keyframes reveal {
 0%, 100% { 
@@ -143,7 +134,6 @@ animation: reveal 5s steps(50, end) infinite; /* Adjust the timing and steps as 
   90% { clip-path: inset(0 0 0 0); 
       }
 }
-
 
 /* Sliding Text Animation */ 
 .sliding-text { 
