@@ -127,21 +127,21 @@ display: inline-block;
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
 animation: reveal 8s steps(50, end) infinite; /* Adjust the timing and steps as needed */
-animation-delay:5s;
+animation-delay:8s;
 } 
 .text-animation2 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
 animation: reveal 8s steps(50, end) infinite; /* Adjust the timing and steps as needed */
-animation-delay:10s;
+animation-delay:9s;
 } 
 .text-animation3 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
 animation: reveal 8s steps(50, end) infinite; /* Adjust the timing and steps as needed */
-animation-delay: 15s;
+animation-delay: 16s;
 } 
 
 
