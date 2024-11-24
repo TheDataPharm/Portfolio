@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
   const textElement = document.querySelector(".text-animation");
-  const text = textElement.textContent;
+  const text = textElement.innerHTML;
   textElement.innerHTML = '';
 
   // Wrap each character in a <span>
   text.split('').forEach((char, index) => {
     const span = document.createElement('span');
-    span.textContent = char;
+    span.innerHTML = char === '\n' ? '<br>' : char;
     span.style.setProperty('--char-index', index);
     textElement.appendChild(span);
   });
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Call the reset function to loop the animation
   textElement.addEventListener('animationend', resetAnimation);
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function() { 
