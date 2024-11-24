@@ -1,26 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
   const textElement = document.querySelector(".text-animation");
-  const text = textElement.innerHTML;
+  const lines = textElement.innerHTML.split('<br>');
+
   textElement.innerHTML = '';
 
-  // Wrap each character in a <span>
-  text.split('').forEach((char, index) => {
-    const span = document.createElement('span');
-    span.innerHTML = char === '\n' ? '<br>' : char;
-    span.style.setProperty('--char-index', index);
-    textElement.appendChild(span);
+  // Wrap each character of each line in a <span>
+  lines.forEach((line, lineIndex) => {
+    const lineSpan = document.createElement('span');
+    lineSpan.classList.add('line');
+
+    line.split('').forEach((char, charIndex) => {
+      const charSpan = document.createElement('span');
+      charSpan.textContent = char;
+      charSpan.style.animationDelay = `${(lineIndex * 2) + (charIndex * 0.1)}s`; // Delay based on character and line index
+      lineSpan.appendChild(charSpan);
+    });
+
+    textElement.appendChild(lineSpan);
+    textElement.appendChild(document.createElement('br')); // Add line break
   });
-
-  // Function to reset the animation for repeating effect
-  function resetAnimation() {
-    textElement.style.animation = 'none';
-    textElement.offsetHeight; // Trigger reflow
-    textElement.style.animation = null;
-  }
-
-  // Call the reset function to loop the animation
-  textElement.addEventListener('animationend', resetAnimation);
 });
+
 
 
 
