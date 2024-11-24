@@ -1,29 +1,31 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const textElement = document.querySelector(".text-animation");
-  const lines = textElement.innerHTML.split('<br>');
+  const textElements = document.querySelectorAll(".text-animation");
 
-  textElement.innerHTML = '';
+  textElements.forEach((element, index) => {
+    const text = element.textContent;
+    element.innerHTML = '';
 
-  // Wrap each character of each line in a <span>
-  lines.forEach((line, lineIndex) => {
-    const lineSpan = document.createElement('span');
-    lineSpan.classList.add('line');
-
-    line.split('').forEach((char, charIndex) => {
-      const charSpan = document.createElement('span');
-      charSpan.textContent = char;
-      charSpan.style.animationDelay = `${(lineIndex * 2) + (charIndex * 0.1)}s`; // Delay based on character and line index
-      charSpan.style.animationDuration = '0.5s'; // Duration for each character's animation
-      lineSpan.appendChild(charSpan);
+    text.split('').forEach((char, charIndex) => {
+      const span = document.createElement('span');
+      span.textContent = char;
+      span.style.animationDelay = `${charIndex * 0.1 + index * 5}s`; // Add delay based on character and line index
+      span.style.animationDuration = '0.5s'; // Duration for each character's animation
+      element.appendChild(span);
     });
+  });
 
-    textElement.appendChild(lineSpan);
-    if (lineIndex < lines.length - 1) {
-      textElement.appendChild(document.createElement('br')); // Add line break if not the last line
-    }
+  const totalDuration = textElements.length * 5 + textElements[textElements.length - 1].textContent.length * 0.1;
+
+  textElements[textElements.length - 1].addEventListener('animationend', () => {
+    setTimeout(() => {
+      textElements.forEach(el => {
+        el.style.animation = 'none';
+        el.offsetHeight; /* Trigger reflow */
+        el.style.animation = '';
+      });
+    }, totalDuration * 1000); // Delay before resetting animations
   });
 });
-
 
 
 document.addEventListener("DOMContentLoaded", function() { 
