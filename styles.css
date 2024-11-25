@@ -203,31 +203,35 @@ animation-delay: 16s;
 }
 
 
+
+/* Recent Work Section */
 .recent-work-section {
     padding: 2em;
     background-color: #000;
     color: #9C9C9C;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    text-align: center; /* Center align text */
 }
 
 .recent-work1 {
     border: 1px solid #ddd;
     padding: 1em;
-    margin: 1em 0;
+    margin: 1em auto;
     background-color: #1B1B1B;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block; /* Align the card centrally */
+    width: 80%; /* Control the width of the card */
     color: #9C9C9C;
+    text-align: left; /* Align text to the left */
 }
 
 .recent-work1 img {
     max-width: 100%;
     height: auto;
     margin-top: 1em;
+    border-radius: 5px; /* Round the image corners */
 }
 
 .category {
@@ -258,3 +262,4 @@ animation-delay: 16s;
 .recent-work-link:hover {
     text-decoration: underline;
 }
+
