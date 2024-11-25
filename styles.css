@@ -205,19 +205,39 @@ animation-delay: 16s;
 
 /* Recent Work Section Styling */
 .recent-work-section {
-  padding: 80px 20px;
-  background-color: #000;
-  color: #9C9C9C;
+    padding: 2em;
+    background-color: #f9f9f9;
 }
 
-.recent-work-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.recent-work1 {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.recent-work-section p {
-  text-align: center;
-  font-size: 1.2rem;
-  margin-bottom: 40px;
+.recent-work1 img {
+    max-width: 100%;
+    height: auto;
 }
+
+.category {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.recent-work-link {
+    display: inline-block;
+    margin-top: 1em;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recent-work-link:hover {
+    text-decoration: underline;
+}
+
