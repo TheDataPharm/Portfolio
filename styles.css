@@ -218,18 +218,33 @@ animation-delay: 16s;
     background-color: #1B1B1B;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #9C9C9C;
 }
 
 .recent-work1 img {
     max-width: 100%;
     height: auto;
+    margin-top: 1em;
 }
 
 .category {
     font-size: 0.9em;
-    color: #888;
+    color: #57C400;
     margin-bottom: 0.5em;
     display: block;
+}
+
+.recent-work1 h3 {
+    color: #fff;
+    margin: 0.5em 0;
+}
+
+.recent-work1 p {
+    color: #9C9C9C;
+    margin: 1em 0;
 }
 
 .recent-work-link {
