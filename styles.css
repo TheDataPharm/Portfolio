@@ -78,6 +78,7 @@ html, body {
 .hero-content {
   max-width: 50%;
   margin-left: 20%;
+  margin-top: -50px;
 }
 
 .hero-content h1 {
