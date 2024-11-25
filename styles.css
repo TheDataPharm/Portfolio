@@ -215,11 +215,12 @@ animation-delay: 16s;
   color: #fff;
   font-size: 2em;
   margin-bottom: 0.5em;
+  margin-top: 50px;
 }
 
 .recent-work-section p {
   color: #9C9C9C;
-  font-size: 1.1em;
+  font-size: 1.5em;
   margin-bottom: 2em;
 }
 
@@ -238,7 +239,9 @@ animation-delay: 16s;
 }
 
 .recent-work1 .recent-work-text {
-  flex: 2; /* Allocate more space to the text */
+  flex: 1.4;/* Allocate more space to the text */
+  align-self: center;
+  text-align: left;
 }
 
 .recent-work1 h3 {
@@ -253,12 +256,12 @@ animation-delay: 16s;
   color: #9C9C9C; /* Subtle gray for the description */
 }
 
-.recent-work1 .category {
+/*.recent-work1 .category {
   font-size: 0.9em;
   font-weight: bold;
-  color: #FFD700; /* Bright yellow for the category */
+  color: #FFD700; /* Bright yellow for the category 
   margin-bottom: 1em;
-}
+} */
 
 .recent-work1 .recent-work-image {
   flex: 1; /* Allocate space to the image */
