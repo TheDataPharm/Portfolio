@@ -89,7 +89,7 @@ html, body {
 .hero-content p {
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   color: #1b1b1b;
 }
 
@@ -103,6 +103,7 @@ html, body {
   box-shadow: 0 5px 15px rgba(59, 212, 41, 0.5);
   transition: transform 0.2s;
   text-decoration: none;
+  margin-top: 30px;
 }
 
 .cta-button span {
@@ -111,7 +112,7 @@ html, body {
 }
 
 .cta-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 /* Text animation */ 
@@ -119,7 +120,7 @@ html, body {
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 8s steps(50, end) forwards 1;
+animation: reveal 6s steps(50, end) forwards 1;
 animation-fill-mode: forwards;/* Adjust the timing and steps as needed */
 } 
 
@@ -127,25 +128,25 @@ animation-fill-mode: forwards;/* Adjust the timing and steps as needed */
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 6s steps(50, end) forwards 1;/* Adjust the timing and steps as needed */
+animation: reveal 4s steps(50, end) forwards 1;/* Adjust the timing and steps as needed */
 animation-fill-mode: forwards;
-animation-delay:8s;
+animation-delay:6s;
 } 
 .text-animation2 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 8s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
+animation: reveal 6s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
 animation-fill-mode: forwards;
-animation-delay:14s;
+animation-delay:10s;
 } 
 .text-animation3 { 
 display: inline-block; 
 white-space: nowrap; /* Prevents the text from wrapping */ 
 opacity: 0; 
-animation: reveal 8s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
+animation: reveal 6s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
 animation-fill-mode: forwards;
-animation-delay: 22s;
+animation-delay: 16s;
 } 
 
 
@@ -171,11 +172,11 @@ animation-delay: 22s;
 
 
 /* Sliding Text Animation */ 
-.sliding-text { 
+/*.sliding-text { 
   position: relative; 
   width: 100%; 
   height: 2.5rem; /* Adjust based on your font size */ 
-  overflow: hidden; }
+/*  overflow: hidden; }
 .text-slide { 
   position: absolute; 
   width: 100%; 
@@ -184,7 +185,7 @@ animation-delay: 22s;
   opacity: 0; 
   animation: slide 12s linear infinite; 
 } 
-@keyframes slide { 
+/*@keyframes slide { 
   0%, 20% { 
     transform: translateX(100%); opacity: 0; 
   } 25%, 45% { 
@@ -199,6 +200,8 @@ animation-delay: 22s;
         opacity: 0;
        }
 }
+
+
 /* Recent Work Section Styling */
 .recent-work-section {
   padding: 80px 20px;
