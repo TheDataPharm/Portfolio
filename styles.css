@@ -291,27 +291,58 @@ animation-delay: 16s;
   background-color: #45A000; /* Darker green on hover */
 }
 
-/* Media Queries */ 
-@media (min-width: 768px) { 
-  
-  .hero-section { 
-    flex-direction: row;
-    text-align: left; 
-  } 
-  .hero-content { 
-    max-width: 50%; 
-    margin-left: 20%; 
-  } 
-  .recent-work1 {
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: flex-start; /* Align items at the top */ 
-  } 
-  .recent-work1 .recent-work-text { 
-    flex: 1.4; /* Allocate more space to the text */ 
-  } 
-  .recent-work1 .recent-work-image { 
-    flex: 1; /* Allocate space to the image */ 
-    text-align: right; /* Align the image to the right */ 
-  } 
+/* Default hamburger button styling */
+.hamburger {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #9C9C9C;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
+
+/* Mobile navbar */
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger button */
+  }
+
+  .nav-links {
+    display: none; /* Hide links by default */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width */
+    gap: 1rem; /* Add spacing */
+    padding: 1rem 0;
+    background-color: #1B1B1B; /* Match navbar color */
+    border-radius: 5px;
+    position: absolute;
+    top: 4rem; /* Below the hamburger button */
+    left: 0;
+  }
+
+  .nav-links.show {
+    display: flex; /* Show menu when toggled */
+  }
+
+  .nav-links li a {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    color: #9C9C9C;
+    font-size: 1.2rem;
+  }
+
+  .nav-links li a:hover {
+    text-shadow: 0 0 10px #00ff00; /* Keep hover effect */
+  }
+}
+
