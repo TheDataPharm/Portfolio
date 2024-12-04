@@ -291,3 +291,27 @@ animation-delay: 16s;
   background-color: #45A000; /* Darker green on hover */
 }
 
+/* Media Queries */ 
+@media (min-width: 768px) { 
+  
+  .hero-section { 
+    flex-direction: row;
+    text-align: left; 
+  } 
+  .hero-content { 
+    max-width: 50%; 
+    margin-left: 20%; 
+  } 
+  .recent-work1 {
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; /* Align items at the top */ 
+  } 
+  .recent-work1 .recent-work-text { 
+    flex: 1.4; /* Allocate more space to the text */ 
+  } 
+  .recent-work1 .recent-work-image { 
+    flex: 1; /* Allocate space to the image */ 
+    text-align: right; /* Align the image to the right */ 
+  } 
+}
