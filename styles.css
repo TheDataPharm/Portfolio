@@ -299,7 +299,7 @@ animation-delay: 16s;
 .recent-work2 .recent-work2-text {
   flex: 1.4; /* Allocate more space to the text */
   align-self: center;
-  text-align: left;
+  text-align: right;
   order: 2; /* Order to display text second */
 }
 
