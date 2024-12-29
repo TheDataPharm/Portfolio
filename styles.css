@@ -6,15 +6,7 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-/* Hide the hamburger menu on desktop view */ 
-.hamburger { 
-  display: none; 
-} 
-/* Show the hamburger menu on mobile view */ 
-@media (max-width: 768px) { 
-  .hamburger {
-    display: block; 
-  }
+
 /* Navbar Styling */
 .navbar {
   display: flex;
