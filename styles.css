@@ -6,25 +6,12 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-/* Hamburger Button */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+/* Mobile navbar */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger button */
+  }
 
-.hamburger div {
-  width: 100%;
-  height: 4px;
-  background-color: #57C400;
-  border-radius: 2px;
-  transition: all 0.3s;
-}
 /* Navbar Styling */
 .navbar {
   display: flex;
@@ -66,7 +53,10 @@ html, body {
   color: #57C400; 
   text-shadow: 0 0 10px #00ff00;
 }
-
+.nav-links.active,
+.nav-icons.active {
+ display: flex; /* Show links and icons when active */
+  }
 /* Social Media Icons */
 
 .nav-icons a {
@@ -75,6 +65,7 @@ html, body {
   font-size: 1.2rem;
   text-decoration: none;
   transition: transform 0.3s;
+  flex-direction: row;
 }
 
 .nav-icons a:hover {
