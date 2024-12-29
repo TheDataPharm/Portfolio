@@ -6,7 +6,25 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+/* Hamburger Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
+.hamburger div {
+  width: 100%;
+  height: 4px;
+  background-color: #57C400;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
 /* Navbar Styling */
 .navbar {
   display: flex;
