@@ -6,11 +6,6 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-/* Mobile navbar */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block; /* Show hamburger button */
-  }
 
 /* Navbar Styling */
 .navbar {
