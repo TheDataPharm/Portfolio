@@ -31,11 +31,14 @@ document.addEventListener("DOMContentLoaded", function() {
   } // Call the reset function if needed
   resetAnimation(); 
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.querySelector(".hamburger");
-  const navLinks = document.querySelector(".nav-links");
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+    hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+    });
   });
-});
+</script>
+
