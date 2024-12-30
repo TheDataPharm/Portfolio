@@ -10,31 +10,25 @@ html, body {
 /* Navbar Styling */
 .navbar {
   display: flex;
-  background-color: #1B1B1B;/* Dark background */
-  border-radius: 5px; /* curved borders*/ 
-  margin-left: 18%; /* adds apace to the left */
-  margin-top: -1.5px;  /* removes space from the top */
-  margin-bottom: 100px;
-  padding: 1rem 2rem; 
+  background-color: #1B1B1B; /* Dark background */
+  border-radius: 5px; /* Curved borders */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1.5px; /* Removes space from the top */
+  margin-bottom: 20px;
+  padding: 1rem 2rem;
   align-items: center;
-}
-
-.container {
-  display: flex;
-  justify-content: center; /* Links on the left, icons on the right */
-  align-items: center; /* Center vertically */
+  justify-content: space-between;
 }
 
 /* Navigation Links */
 .nav-links {
   display: flex;
-  gap: 6rem; /* Even spacing between links */
-  padding-left: 4rem;
-  padding-right: 4rem;
+  gap: 2rem; /* Even spacing between links */
   list-style: none;
 }
 
-/* navigation buttons on the navigation bar*/
+/* Navigation buttons on the navigation bar */
 .nav-links li a {
   text-decoration: none;
   color: #6B6B6B;
@@ -50,55 +44,68 @@ html, body {
 }
 
 /* Social Media Icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
 
 .nav-icons a {
   margin: 0 10px;
   color: white;
-  font-size: 1.2rem;
   text-decoration: none;
   transition: transform 0.3s;
-  flex-direction: row;
 }
 
 .nav-icons a:hover {
-  color: #00ff00;/* Green hover effect */
-  transform: scale(1.3)
+  color: #00ff00; /* Green hover effect */
+  transform: scale(1.3);
 }
 
 .nav-icons img { 
   width: 25px; /* Set the desired width */
   height: 25px; /* Set the desired height */
 }
+
 .nav-icons img:hover {
   transform: scale(1.3);
 }
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 /* Hero Section */
 .hero-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding: 80px 40px;
+  text-align: center;
+  padding: 80px 20px;
 }
 
 .hero-content {
-  max-width: 50%;
-  margin-left: 20%;
-  margin-top: -50px;
+  max-width: 80%;
 }
 
 .hero-content h1 {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: -5px;
 }
 
 .hero-content p {
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 0px;
   color: #1b1b1b;
 }
 
+/* CTA Button */
 .cta-button {
   display: inline-block;
   padding: 15px 30px;
@@ -112,49 +119,33 @@ html, body {
   margin-top: 30px;
 }
 
-.cta-button span {
-  font-size: 24px;
-  vertical-align: middle;
-}
-
 .cta-button:hover {
   transform: scale(1.2);
 }
 
 /* Text animation */ 
-.text-animation { 
-display: inline-block; 
-white-space: nowrap; /* Prevents the text from wrapping */ 
-opacity: 0; 
-animation: reveal 6s steps(50, end) forwards 1;
-animation-fill-mode: forwards;/* Adjust the timing and steps as needed */
-} 
-
-.text-animation1 { 
-display: inline-block; 
-white-space: nowrap; /* Prevents the text from wrapping */ 
-opacity: 0; 
-animation: reveal 4s steps(50, end) forwards 1;/* Adjust the timing and steps as needed */
-animation-fill-mode: forwards;
-animation-delay:6s;
-} 
-.text-animation2 { 
-display: inline-block; 
-white-space: nowrap; /* Prevents the text from wrapping */ 
-opacity: 0; 
-animation: reveal 6s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
-animation-fill-mode: forwards;
-animation-delay:10s;
-} 
+.text-animation,
+.text-animation1,
+.text-animation2,
 .text-animation3 { 
-display: inline-block; 
-white-space: nowrap; /* Prevents the text from wrapping */ 
-opacity: 0; 
-animation: reveal 6s steps(50, end) forwards 1; /* Adjust the timing and steps as needed */
-animation-fill-mode: forwards;
-animation-delay: 16s;
+  display: inline-block; 
+  white-space: nowrap; /* Prevents the text from wrapping */ 
+  opacity: 0; 
+  animation: reveal 6s steps(50, end) forwards 1;
+  animation-fill-mode: forwards; /* Adjust the timing and steps as needed */
 } 
 
+.text-animation1 {
+  animation-delay: 6s;
+} 
+
+.text-animation2 {
+  animation-delay: 10s;
+} 
+
+.text-animation3 {
+  animation-delay: 16s;
+} 
 
 /* Keyframes for the animation */ 
 @keyframes reveal {
@@ -175,46 +166,13 @@ animation-delay: 16s;
   }
 }
 
-
-
-/* Sliding Text Animation */ 
-/*.sliding-text { 
-  position: relative; 
-  width: 100%; 
-  height: 2.5rem; /* Adjust based on your font size */ 
-/*  overflow: hidden; }
-.text-slide { 
-  position: absolute; 
-  width: 100%; 
-  text-align: center; 
-  white-space: nowrap; 
-  opacity: 0; 
-  animation: slide 12s linear infinite; 
-} 
-/*@keyframes slide { 
-  0%, 20% { 
-    transform: translateX(100%); opacity: 0; 
-  } 25%, 45% { 
-    transform: translateX(0); 
-    opacity: 0; } 
-  50%, 70% { 
-    transform: translateX(100%); 
-    opacity: 0; 
-  } 75%, 95% { 
-    transform: translateX(0); opacity: 1; } 
-  100% { transform: translateX(100%); 
-        opacity: 0;
-       }
-}
-
-/* Recent Work Section */ 
 /* Recent Work Section */
 .recent-work-section {
   padding: 2em;
   background-color: #000;
   color: #9C9C9C;
   text-align: center; /* Center align the title and intro */
-  margin-top: 50px
+  margin-top: 50px;
 }
 
 .recent-work-section h2 {
@@ -230,104 +188,55 @@ animation-delay: 16s;
   margin-bottom: 2em;
 }
 
-.recent-work1 {
+.recent-work1,
+.recent-work2 {
   display: flex; /* Flexbox for layout */
-  justify-content: space-between; /* Space between the text and image */
-  align-items: flex-start; /* Align items at the top */
+  flex-direction: column;
+  justify-content: center; /* Center align items */
   background-color: #000; /* Dark card background */
   color: #fff;
   border-radius: 10px; /* Smooth rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
   padding: 20px;
   margin: 20px auto;
-  width: 80%; /* Limit the width of the section */
+  width: 90%; /* Limit the width of the section */
   gap: 20px; /* Add spacing between text and image */
 }
 
-.recent-work1 .recent-work-text {
-  flex: 1.4;/* Allocate more space to the text */
-  align-self: center;
+.recent-work1 .recent-work-text,
+.recent-work2 .recent-work2-text {
+  flex: 1.4; /* Allocate more space to the text */
   text-align: left;
 }
 
-.recent-work1 h3 {
-  font-size: 1.8em;
-  color: #57C400; /* Green text for the project title */
-  margin-bottom: 0.5em;
-}
-
-.recent-work1 p {
-  font-size: 1em;
-  line-height: 1.6;
-  color: #9C9C9C; /* Subtle gray for the description */
-}
-
-/*.recent-work1 .category {
-  font-size: 0.9em;
-  font-weight: bold;
-  color: #FFD700; /* Bright yellow for the category 
-  margin-bottom: 1em;
-} */
-
-.recent-work1 .recent-work-image {
-  flex: 1; /* Allocate space to the image */
-  text-align: right; /* Align the image to the right */
-}
-
-.recent-work1 img {
-  max-width: 100%; /* Ensure the image fits within the container */
-  height: auto;
-  border-radius: 5px; /* Rounded corners */
-}
-
-
-.recent-work2 {
-  display: flex; /* Flexbox for layout */
-  justify-content: space-between; /* Space between the text and image */
-  align-items: flex-start; /* Align items at the top */
-  background-color: #000; /* Dark card background */
-  color: #fff;
-  border-radius: 10px; /* Smooth rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-  padding: 20px;
-  margin: 20px auto;
-  width: 80%; /* Limit the width of the section */
-  gap: 20px; /* Add spacing between text and image */
-}
-
-.recent-work2 .recent-work2-image {
-  flex: 1; /* Allocate space to the image */
-  text-align: left; /* Align the image to the left */
-  order: 1; /* Order to display image first */
-}
-
-.recent-work2 .recent-work2-text {
-  flex: 1.4; /* Allocate more space to the text */
-  align-self: center;
-  text-align: right;
-  order: 2; /* Order to display text second */
-}
-
+.recent-work1 h3,
 .recent-work2 h3 {
   font-size: 1.8em;
   color: #57C400; /* Green text for the project title */
   margin-bottom: 0.5em;
 }
 
+.recent-work1 p,
 .recent-work2 p {
   font-size: 1em;
   line-height: 1.6;
   color: #9C9C9C; /* Subtle gray for the description */
 }
 
+.recent-work1 .recent-work-image,
+.recent-work2 .recent-work2-image {
+  flex: 1; /* Allocate space to the image */
+  text-align: center; /* Align the image to the center */
+}
+
+.recent-work1 img,
 .recent-work2 img {
   max-width: 100%; /* Ensure the image fits within the container */
   height: auto;
   border-radius: 5px; /* Rounded corners */
 }
 
-
-/* This link the Recent work on the navbar to the recent work section */
+/* This links the Recent Work in the navbar to the recent work section */
 .recent-work-link {
   display: inline-block;
   margin-top: 1em;
@@ -344,3 +253,44 @@ animation-delay: 16s;
   background-color: #45A000; /* Darker green on hover */
 }
 
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero-section {
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .recent-work1,
+  .recent-work2 {
+    width: 100%; /* Full width on mobile */
+  }
+}
