@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omoyele Oluwatobiloba | The Data Pharm</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,6 +17,12 @@
         <div class="main-wrapper nav-container">
             <a href="#" class="logo">TheDataPharm.</a> 
             
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <ul class="nav-links">
                 <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
@@ -43,14 +53,14 @@
 
                 <article class="project-card">
                     <div class="project-image-container">
-                        <img src="Assets/pexels-luis-gomes-166706-546819.jpg" alt="Drug Recommendation System Interface">
+                        <img src="Assets/pexels-luis-gomes-166706-546819.jpg" alt="Molecular Drug Recommendation Interface">
                     </div>
                     <div class="project-content">
                         <span class="category">HEALTH TECH / ML</span>
                         <h3>Molecular Drug Recommendation Engine</h3>
                         <p>
                             A machine learning system designed to identify potential drug candidates by analyzing molecular similarity. 
-                            Utilizing <strong>Item-Based Collaborative Filtering</strong>, this model compares target drugs against vast chemical libraries to predict efficacy and reduce discovery time.
+                            Utilizing <strong>Item-Based Collaborative Filtering</strong>, this model compares target drugs against chemical libraries to predict efficacy and reduce discovery time.
                         </p>
                         <p class="tech-stack">Python &bull; Scikit-Learn &bull; Pandas &bull; Cheminformatics</p>
                         <a href="#" class="text-link">View Analysis &rarr;</a>
@@ -59,14 +69,14 @@
 
                 <article class="project-card reversed">
                     <div class="project-image-container">
-                        <img src="Assets/pexels-jorge-jesus-137537-614117.jpg" alt="Data Analysis Dashboard">
+                        <img src="Assets/pexels-jorge-jesus-137537-614117.jpg" alt="Clinical Data Dashboard">
                     </div>
                     <div class="project-content">
-                        <span class="category">ANALYTICS</span>
-                        <h3>Clinical Data Visualization</h3>
+                        <span class="category">DATA VISUALIZATION</span>
+                        <h3>Clinical Data Analysis</h3>
                         <p>
-                            [REPLACE THIS]: Transformed raw clinical trial data into interactive dashboards for stakeholders. 
-                            Identified key trends in patient recovery rates that improved resource allocation by 15%.
+                            Transformed complex clinical trial datasets into actionable insights. 
+                            Designed interactive dashboards to track patient recovery rates, identifying trends that improved resource allocation by 15%.
                         </p>
                         <p class="tech-stack">SQL &bull; Tableau &bull; Python</p>
                         <a href="#" class="text-link">View Case Study &rarr;</a>
@@ -78,10 +88,11 @@
     </main>
 
     <footer>
-        <div class="main-wrapper">
-            <p>&copy; 2026 Omoyele Oluwatobiloba. Built for impact.</p>
+        <div class="main-wrapper" style="padding: 2rem 24px; text-align: center; border-top: 1px solid #222; margin-top: 4rem;">
+            <p style="font-size: 0.9rem; color: #666;">&copy; 2026 Omoyele Oluwatobiloba. Built for impact.</p>
         </div>
     </footer>
 
+    <script src="scripts.js"></script>
 </body>
 </html>
