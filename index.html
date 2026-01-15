@@ -1,85 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omoyele Oluwatobiloba | The Data Pharm</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar" style="width: fit-content; height: 40px;">
-  <!-- <button class="hamburger" aria-label="Toggle navigation">
-      &#9776; <!-- Unicode for three parallel lines -->
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Testimonials</a></li>
-      <li><a href="#recent-work">Recent Work</a></li> <!-- Links to the Recent Work section -->
-      <li><a href="#">Get In Touch</a></li>
-    </ul>
-    <ul class="nav-icons" style="list-style: none; display: flex; align-items: center;">
-      <li><a href="https://www.linkedin.com/in/theDataPharm/"><img src="Assets/social (1).png" alt="LinkedIn" class="icon" width="32"></a></li>
-      <li><a href="https://x.com/TheDataPharm"><img src="Assets/twitter-logo.png" alt="Twitter" class="icon" width="32"></a></li>
-      <li><a href="https://github.com/TheDataPharm"><img src="Assets/social.png" alt="Github" class="icon" width="32"></a></li>
-    </ul>
-  </nav>
 
-  <!-- Body Section -->
-  <section class="hero-section">
-    <div class="hero-content">
-      <h1 class="sliding-text"> 
-     <!--  <span class="text-slide">Oluwatobiloba Omoyele</span> 
-        <span class="text-slide">Data Scientist</span> 
-        <span class="text-slide">Analyst</span> 
-        <span class="text-slide">Storyteller</span> --> OMOYELE OLUWATOBILOBA </h1>
+    <nav class="navbar">
+        <div class="main-wrapper nav-container">
+            <a href="#" class="logo">TheDataPharm.</a> 
+            
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-icons">
+                <a href="https://github.com/TheDataPharm" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/theDataPharm/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </nav>
 
- <p class="text-animation"> Hello there! I am a data scientist.</p>
-  <p class="text-animation1">I am specialized in unlocking insights and</p>
-  <p class="text-animation2">driving decisions towards creating data-driven solutions
-  for business growth.</p>
-  <p class="text-animation3">Click the button below to find out more about me. </p>
+    <main>
+        <section class="hero-section">
+            <div class="main-wrapper hero-grid">
+                <div class="hero-content">
+                    <h1>Data Science meets <br> <span class="highlight">Pharmacology.</span></h1>
+                    <p>I build computational models that accelerate drug discovery and optimize healthcare decisions. Bridging the gap between molecular properties and business intelligence.</p>
+                    <a href="#work" class="cta-button">View Case Studies</a>
+                </div>
+            </div>
+        </section>
 
-      <a href="#" class="cta-button">Let’s get started &rsaquo;</a>
-    </div>
+        <section id="work" class="recent-work-section">
+            <div class="main-wrapper">
+                <h2>Selected Projects</h2>
 
-  </section>
-  <!-- Recent Work Section -->
-  <section id="recent-work" class="recent-work-section">
-  <h2>Recent Work</h2>
-  <p>Explore my recent data science endeavors, latest projects that demonstrate my skills.</p>
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img src="Assets/pexels-luis-gomes-166706-546819.jpg" alt="Drug Recommendation System Interface">
+                    </div>
+                    <div class="project-content">
+                        <span class="category">HEALTH TECH / ML</span>
+                        <h3>Molecular Drug Recommendation Engine</h3>
+                        <p>
+                            A machine learning system designed to identify potential drug candidates by analyzing molecular similarity. 
+                            Utilizing <strong>Item-Based Collaborative Filtering</strong>, this model compares target drugs against vast chemical libraries to predict efficacy and reduce discovery time.
+                        </p>
+                        <p class="tech-stack">Python &bull; Scikit-Learn &bull; Pandas &bull; Cheminformatics</p>
+                        <a href="#" class="text-link">View Analysis &rarr;</a>
+                    </div>
+                </article>
 
-  <!-- Recent Work 1 -->
-  <div class="recent-work1">
-    <div class="recent-work-text">
-      <!--span class="category">Fintech</span> -->
-      <h3>Drug Recommendation System</h3>
-      <p>Using item-based collaborative filtering to compare molecular properties and return drug molecules
-        with the most similar molecular properties to our target drug. Both objective and subjective measures
-        were used to assess the accuracy and performance of the recommendation system.</p>
-      <a href="#" class="recent-work-link">View Case Study</a>
-    </div>
-    <div class="recent-work-image">
-      <img src="Assets/pexels-luis-gomes-166706-546819.jpg" alt="Drug Recommendation System">
-    </div>
-  </div>
-</section>
+                <article class="project-card reversed">
+                    <div class="project-image-container">
+                        <img src="Assets/pexels-jorge-jesus-137537-614117.jpg" alt="Data Analysis Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <span class="category">ANALYTICS</span>
+                        <h3>Clinical Data Visualization</h3>
+                        <p>
+                            [REPLACE THIS]: Transformed raw clinical trial data into interactive dashboards for stakeholders. 
+                            Identified key trends in patient recovery rates that improved resource allocation by 15%.
+                        </p>
+                        <p class="tech-stack">SQL &bull; Tableau &bull; Python</p>
+                        <a href="#" class="text-link">View Case Study &rarr;</a>
+                    </div>
+                </article>
 
-  <!-- Recent Work 2 -->
-  <div class="recent-work2">
-    <div class="recent-work2-text">
-      <!--span class="category">Fintech</span> -->
-      <h3>Drug Recommendation System</h3>
-      <p>Using item-based collaborative filtering to compare molecular properties and return drug molecules
-        with the most similar molecular properties to our target drug. Both objective and subjective measures
-        were used to assess the accuracy and performance of the recommendation system.</p>
-      <a href="#" class="recent-work-link">View Case Study</a>
-    </div>
-    <div class="recent-work2-image">
-      <img src="Assets/pexels-jorge-jesus-137537-614117.jpg" alt="Drug Recommendation System">
-    </div>
-  </div>
-</section>
+            </div>
+        </section>
+    </main>
 
-  <script src="scripts.js"></script>
+    <footer>
+        <div class="main-wrapper">
+            <p>&copy; 2026 Omoyele Oluwatobiloba. Built for impact.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
