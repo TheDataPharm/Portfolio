@@ -6,25 +6,24 @@ html, body {
   padding: 0;
   box-sizing: border-box; /* Makes layout math accurate */
   font-family: 'Inter', system-ui, sans-serif; /* Clean font for reading */
-  background-color: #0a0a0a; /* Professional dark grey (better than pitch black) */
+  background-color: #0a0a0a; /* Professional dark grey */
   color: #c0c0c0; /* Light grey text */
   scroll-behavior: smooth;
   line-height: 1.6;
 }
 
-/* Use Monospace font for "Technical" elements (Headers, Logo, Code) */
-h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
+/* Use Monospace font for "Technical" elements */
+h1, h2, h3, .logo, .nav-links, .category, .tech-stack, .skill-tags {
   font-family: 'IBM Plex Mono', monospace;
 }
 
 /* =========================================
-   2. LAYOUT UTILITIES (The "Container" System)
+   2. LAYOUT UTILITIES
    ========================================= */
-/* This class centers your content on the screen */
 .main-wrapper {
-  max-width: 1100px; /* Limits width on big screens */
-  margin: 0 auto;    /* Centers the box */
-  padding: 0 24px;   /* Adds breathing room on sides */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* =========================================
@@ -32,14 +31,14 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
    ========================================= */
 .navbar {
   padding: 1.5rem 0;
-  background-color: transparent; /* Seamless look */
+  background-color: transparent;
   position: relative;
   z-index: 100;
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-between; /* Logo left, Links center, Icons right */
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -53,7 +52,7 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
 
 .nav-links {
   display: flex;
-  gap: 3rem; /* Space between links */
+  gap: 3rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -91,22 +90,22 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
    4. HERO SECTION
    ========================================= */
 .hero-section {
-  padding: 120px 0 100px; /* Top/Bottom spacing */
+  padding: 120px 0 100px;
 }
 
 .hero-content {
-  max-width: 700px; /* Prevents text from stretching too wide */
+  max-width: 700px;
 }
 
 .hero-content h1 {
-  font-size: 3.5rem; /* Big impact headline */
+  font-size: 3.5rem;
   color: #fff;
   margin-bottom: 1.5rem;
   line-height: 1.1;
 }
 
 .highlight {
-  color: #57C400; /* Green accent text */
+  color: #57C400;
 }
 
 .hero-content p {
@@ -116,12 +115,11 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
   color: #9C9C9C;
 }
 
-/* The Green Button */
 .cta-button {
   display: inline-block;
   padding: 16px 32px;
   background-color: #57C400;
-  color: #000; /* Black text for contrast */
+  color: #000;
   font-weight: 700;
   text-decoration: none;
   border-radius: 4px;
@@ -130,11 +128,11 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
 
 .cta-button:hover {
   background-color: #4CAF00;
-  transform: translateY(-2px); /* Subtle lift effect */
+  transform: translateY(-2px);
 }
 
 /* =========================================
-   5. PROJECTS SECTION (The "Zig-Zag" Layout)
+   5. PROJECTS SECTION
    ========================================= */
 .recent-work-section {
   padding: 100px 0;
@@ -144,46 +142,42 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
   color: #fff;
   font-size: 2rem;
   margin-bottom: 4rem;
-  border-left: 4px solid #57C400; /* Green bar on the left */
+  border-left: 4px solid #57C400;
   padding-left: 1rem;
 }
 
-/* The Project Card Container */
 .project-card {
   display: flex;
-  align-items: center; /* Vertically center image and text */
-  gap: 4rem; /* Space between image and text */
-  margin-bottom: 8rem; /* Space between projects */
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 8rem;
 }
 
-/* Flip the layout for every second card (Text Left, Image Right) */
 .project-card.reversed {
   flex-direction: row-reverse;
 }
 
-/* Project Image Styling */
 .project-image-container {
-  flex: 1.2; /* Takes up slightly more space than text */
+  flex: 1.2;
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #222; /* Subtle border */
+  border: 1px solid #222;
 }
 
 .project-image-container img {
   width: 100%;
   display: block;
-  filter: grayscale(100%); /* Makes images black & white initially */
+  filter: grayscale(100%);
   transition: filter 0.4s ease, transform 0.4s ease;
 }
 
 .project-image-container:hover img {
-  filter: grayscale(0%); /* Full color on hover */
-  transform: scale(1.03); /* slight zoom */
+  filter: grayscale(0%);
+  transform: scale(1.03);
 }
 
-/* Project Text Styling */
 .project-content {
-  flex: 1; /* Takes up remaining space */
+  flex: 1;
 }
 
 .category {
@@ -208,7 +202,7 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
 
 .tech-stack {
   font-size: 0.85rem;
-  color: #666; /* Darker grey for metadata */
+  color: #666;
   margin-bottom: 2rem;
   font-family: 'IBM Plex Mono', monospace;
 }
@@ -227,7 +221,75 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
 }
 
 /* =========================================
-   6. MOBILE RESPONSIVENESS
+   6. ABOUT SECTION (New from CV)
+   ========================================= */
+.about-section {
+  padding: 100px 0;
+  border-top: 1px solid #1a1a1a;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Text is wider than skills */
+  gap: 4rem;
+  align-items: start;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.about-text p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: #c0c0c0;
+}
+
+.personal-note {
+  font-size: 0.9rem !important;
+  color: #666 !important;
+  margin-top: 2rem;
+  font-family: 'IBM Plex Mono', monospace;
+  border-left: 2px solid #333;
+  padding-left: 1rem;
+}
+
+/* Skills Container */
+.skills-container h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tags span {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: 1px solid #333;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.skill-tags span:hover {
+  border-color: #57C400;
+  color: #57C400;
+}
+
+/* =========================================
+   7. MOBILE RESPONSIVENESS
    ========================================= */
 
 /* Default Desktop: Hide Hamburger */
@@ -248,7 +310,7 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
   background-color: #fff;
 }
 
-/* Mobile Rules (Screens smaller than 768px) */
+/* Mobile Rules (< 768px) */
 @media (max-width: 768px) {
   
   /* Show Hamburger */
@@ -257,26 +319,20 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
     z-index: 200;
   }
 
-  /* Hamburger Animation to 'X' */
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+  /* Hamburger Animation */
+  .hamburger.active .bar:nth-child(2) { opacity: 0; }
+  .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
 
-  /* Navigation Drawer Logic */
+  /* Navigation Drawer */
   .nav-links {
     position: fixed;
-    left: -100%; /* Hide off-screen left */
-    top: 70px; /* Below navbar */
+    left: -100%;
+    top: 70px;
     flex-direction: column;
     background-color: #0a0a0a;
     width: 100%;
-    height: 100vh; /* Full height */
+    height: 100vh;
     text-align: center;
     padding-top: 2rem;
     transition: 0.3s ease-in-out;
@@ -284,33 +340,32 @@ h1, h2, h3, .logo, .nav-links, .category, .tech-stack {
   }
 
   .nav-links.active {
-    left: 0; /* Slide in */
+    left: 0;
   }
 
-  /* Hide Desktop Icons on Mobile */
-  .nav-icons {
-    display: none;
-  }
+  /* Hide Desktop Icons */
+  .nav-icons { display: none; }
 
-  /* Typography Adjustments */
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
+  /* Typography */
+  .hero-content h1 { font-size: 2.5rem; }
+  .about-text h2 { font-size: 2rem; }
 
-  /* Project Stacking */
+  /* Stack Projects */
   .project-card, 
   .project-card.reversed {
-    flex-direction: column; /* Stack image on top of text */
+    flex-direction: column;
     gap: 2rem;
     margin-bottom: 5rem;
   }
 
-  .project-image-container {
-    width: 100%;
-  }
+  .project-image-container { width: 100%; }
   
-  /* Reset order so image is always first on mobile */
-  .project-card.reversed .project-image-container {
-    order: -1; 
+  /* Ensure image is top on mobile for reversed cards */
+  .project-card.reversed .project-image-container { order: -1; }
+
+  /* Stack About Section */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 }
