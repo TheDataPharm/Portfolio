@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
     const links = document.querySelectorAll('.nav-links a');
 
-    // 1. Toggle Mobile Menu when Hamburger is clicked
+    // 1. Toggle Mobile Menu
+    // When the hamburger icon is clicked, open/close the drawer
     if (hamburger) {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
@@ -11,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Close the mobile menu when a link is clicked
-    // (This improves UX so the menu doesn't stay open after navigating)
+    // 2. Auto-Close on Click
+    // When a user clicks a link (e.g., "Work"), close the menu automatically
     links.forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
